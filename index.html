@@ -19,5 +19,24 @@
 		
 		<div id="canvaszone"><canvas id="canvas" width="800" height="400"></canvas></div>
 		<script href="script.js"></script>
+
+	<!--slider for speed-->
+	<div class="slidecontainer">
+		<label for="slideInput">Speed:</label>
+		<input id="SpeednumInput" type="number" name="SpeedNumber" 
+				value="0" min="1" max="200" oninput="numberUpdate()">
+
+		<input id="sliderInputSpeed" type="range" class="slider_speed"
+				min="1" max="200" value="0" oninput="sliderUpdate()">
+		</div>
+	<!--slider for elevation-->
+	<div class="slidecontainer">
+		<label for="slideInput">Elevation:</label>
+		<input id="ElevationnumInput" type="number" name="ElevationNumber" 
+				value="0" min="1" max="200" oninput="numberUpdateE()">
+
+		<input id="sliderInputElevation" type="range" class="slider_Elevation"
+				min="1" max="200" value="0" oninput="sliderUpdateE()">
+		</div>
+	<script src="script.js"></script>
 	</body>
-</html>
