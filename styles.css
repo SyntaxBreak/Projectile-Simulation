@@ -112,7 +112,7 @@ label{
 #sliderInputElevation {
 	-webkit-appearance: none; 
 	width: 300px;
-	background: linear-gradient(to right, rgba(89, 186, 84, 0.997), rgb(9, 184, 15));
+	background: linear-gradient(to right, rgba(116, 184, 112, 0.997), rgb(9, 184, 15));
 	margin: 5px;
 	border-radius: 30px;
 	height: 35px;
