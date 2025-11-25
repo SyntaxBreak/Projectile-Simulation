@@ -76,10 +76,9 @@ div #sliderInputSpeed {
 	-webkit-appearance: none; 
 	width: 300px;
 	background: linear-gradient(to right, rgba(128, 178, 252, 0.997), rgb(8, 103, 237));
-	margin: 5px;
+	margin: 10px;
 	border-radius: 30px;
 	height: 35px;
-	margin-top: 18px;
 	transform: translate(70px, 0px);
 }
 
@@ -94,8 +93,7 @@ div #sliderInputSpeed {
 }
 
 #SpeednumInput {
-	margin: 7px;
-	margin-top: 13px;
+	margin: 10px;
 	padding: 0;
 	color: white;
 	font-size: 23px;
@@ -108,7 +106,7 @@ div #sliderInputSpeed {
 label{
 	font-size: 30px;
 	margin: 7px;
-	margin-top: 13px;
+	margin-top: 10px;
 
 }
 
@@ -116,11 +114,10 @@ label{
 	-webkit-appearance: none; 
 	width: 300px;
 	background: linear-gradient(to right, rgba(116, 184, 112, 0.997), rgb(9, 184, 15));
-	margin: 5px;
+	margin: 10px;
 	border-radius: 30px;
 	height: 35px;
-	margin-top: 10px;
-	transform: translate(28px, 0px);
+	transform: translate(34px, 0px);
 }
 
 #sliderInputElevation::-webkit-slider-thumb {
@@ -134,8 +131,7 @@ label{
 }
 
 #ElevationnumInput {
-	margin: 7px;
-	margin-top: 10px;
+	margin: 10px;
 	padding: 0;
 	color: white;
 	font-size: 23px;
