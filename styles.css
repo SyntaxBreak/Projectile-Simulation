@@ -80,6 +80,7 @@ div #sliderInputSpeed {
 	border-radius: 30px;
 	height: 35px;
 	margin-top: 18px;
+	transform: translate(70px, 0px);
 }
 
 #sliderInputSpeed::-webkit-slider-thumb {
@@ -101,12 +102,14 @@ div #sliderInputSpeed {
 	background-color: #222424;
 	border: 1px solid whitesmoke;
 	text-align: center;	
+	transform: translate(52px, 0px);
 }
 
 label{
 	font-size: 30px;
 	margin: 7px;
 	margin-top: 13px;
+
 }
 
 #sliderInputElevation {
@@ -117,6 +120,7 @@ label{
 	border-radius: 30px;
 	height: 35px;
 	margin-top: 10px;
+	transform: translate(28px, 0px);
 }
 
 #sliderInputElevation::-webkit-slider-thumb {
@@ -138,4 +142,5 @@ label{
 	background-color: #222424;
 	border: 1px solid whitesmoke;
 	text-align: center;	
+	transform: translate(10px, 0px);
 }
