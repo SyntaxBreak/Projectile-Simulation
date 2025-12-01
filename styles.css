@@ -45,12 +45,16 @@ body {
 	width: 50%;
 	align-items: center; justify-content: center;
 	cursor: pointer;
+	font-size: 25px;
+	border-radius: 5px;
 }
 
 #projectile-stats {
 	background-color: purple;
-	width: 10%; min-width: 14rem;
+	width: 20%; min-width: 14rem;
 	flex-direction: column; row-gap: 0.2rem;
+	font-size: 25px;
+	border-radius: 7px;	
 }
 
 #canvaszone {
@@ -80,12 +84,13 @@ div #sliderInputSpeed {
 	border-radius: 30px;
 	height: 35px;
 	transform: translate(70px, 0px);
+	cursor: pointer;
 }
 
 #sliderInputSpeed::-webkit-slider-thumb {
 	-webkit-appearance: none;
-	height: 25px;
-	width: 25px;
+	height: 27px;
+	width: 27px;
 	border-radius: 35px;
 	background: #01364b0f;
 	border: 4px double black;
@@ -118,12 +123,13 @@ label{
 	border-radius: 30px;
 	height: 35px;
 	transform: translate(30px, 0px);
+	cursor: pointer;
 }
 
 #sliderInputElevation::-webkit-slider-thumb {
 	-webkit-appearance: none;
-	height: 25px;
-	width: 25px;
+	height: 27px;
+	width: 27px;
 	border-radius: 35px;
 	background: #01364b0f;
 	border: 4px double black;
