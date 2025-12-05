@@ -72,6 +72,20 @@ span {
 }
 
 #canvas-zone {
+	font-size: 25px;
+	border-radius: 5px;
+}
+
+#projectile-stats {
+	background-color: purple;
+	width: 20%; min-width: 14rem;
+	flex-direction: column; row-gap: 0.2rem;
+	font-size: 25px;
+	border-radius: 7px;	
+}
+
+#canvaszone {
+	background-color: white;
 	width: 85%; 
 	height: 65%;
 	align-self: center;
