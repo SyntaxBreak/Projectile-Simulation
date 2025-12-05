@@ -97,17 +97,23 @@ initialVelocityInput.oninput = function() {
 };
 
 startButton.addEventListener("click", function() {
+	console.log(previousTrajectories.length);
 	if (previousTrajectories.length > maxPreviousTrajectories) {
+		console.log("shifted");
 		previousTrajectories.shift();
 	}
-
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 	for (var trajectoryData of previousTrajectories) {
 		drawTrajectory(trajectoryData.xVelocity, trajectoryData.yVelocity, trajectoryData.travelTime, "gray", false);
 	}
 
+	
+
 	drawTrajectory(xVelocity, yVelocity, travelTime, "white", true);
 	previousTrajectories.push({xVelocity, yVelocity, travelTime});
+
+	
+
 });
 
 resetButton.addEventListener("click", function() {
