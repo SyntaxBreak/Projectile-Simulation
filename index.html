@@ -5,38 +5,33 @@
 		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
-		<div id="topbar">
-			<div id="function-buttons">
+		
+		<h1>Projectile Motion Simulator<span class="spoiler">(in dark mode too!)</span></h1>
+		<div id="canvas-zone"><canvas id="canvas" width="1000" height="700"></canvas></div>
+		
+		<div id="simulation-control">
+			<div id="inputs">
+				<div id="velocity-input">
+					<label for="velocity-slider">Speed:</label>
+					<input id="velocity-slider" type="range" min="0" max="100">
+					<p id="velocity-text"></p>
+				</div>
+				<div id="angle-input">
+					<label for="angle-slider">Angle:</label>
+					<input id="angle-slider" type="range" min="0" max="90">
+					<p id="angle-text"></p>
+				</div>
+			</div>
+			<div id="stats">
+				<p id="max-height">Max Height: XXm</p>
+				<p id="travel-distance">Horizontal Distance: XXm</p>
+				<p id="travel-time">Travel Duration: XXsecs</p>
+			</div>
+		</div>
+		<div id="buttons">
 				<button id="start-button" type="button">Start</button>
 				<button id="reset-button" type="button">Reset</button>
-			</div>
-			<div id="projectile-stats">
-				<p>Max Height: XXm</p>
-				<p>Horizontal Distance: XXm</p>
-				<p>Travel Duration: XXsecs</p>
-			</div>
 		</div>
-		
-		<div id="canvaszone"><canvas id="canvas" width="800" height="400"></canvas></div>
-		<script href="script.js"></script>
-
-	<!--slider for speed-->
-	<div class="slidecontainer">
-		<label for="slideInput">Speed:</label>
-		<input id="SpeednumInput" type="number" name="SpeedNumber" 
-				value="0" min="1" max="200" oninput="numberUpdate()">
-
-		<input id="sliderInputSpeed" type="range" class="slider_speed"
-				min="1" max="200" value="0" oninput="sliderUpdate()">
-		</div>
-	<!--slider for elevation-->
-	<div class="slidecontainer">
-		<label for="slideInput">Elevation:</label>
-		<input id="ElevationnumInput" type="number" name="ElevationNumber" 
-				value="0" min="1" max="200" oninput="numberUpdateE()">
-
-		<input id="sliderInputElevation" type="range" class="slider_Elevation"
-				min="1" max="200" value="0" oninput="sliderUpdateE()">
-		</div>
-	<script src="script.js"></script>
+		<script src="script.js"></script>
 	</body>
+</html>

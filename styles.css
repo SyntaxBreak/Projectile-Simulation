@@ -1,141 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Share+Tech&display=swap');
 :root {
-	--black: #222424;
+	--background-color: rgb(23,23,23);
+	--background-color2: rgb(41,41,41);
+	--theme-color: rgb(54,173,114);
+	--text-color: rgb(225, 225, 225);
+	--text-color2: rgb(121, 121, 121);
 }
 
 * {
-	border: 1px solid red;
+	font-family: "Google Sans Code"; font-size: 20px;
+	/*border: 1px solid red;*/
 	margin: 0; padding: 0;
-	color: white;
+	color: var(--text-color);
 }
 
 script {
 	border: none;
 }
 
-body * {
+body, body * {
 	display: flex;
 }
 
 html {
-	background: var(--black);
-	width: 99%; height: 99%;
+	background: var(--background-color);
+	width: calc(100% - 2px); height: calc(100% - 2px);
 	align-self: center;
+
 }
 
 body {
 	margin: 3rem;
-	border-color: aqua;
-	width: 93vw; 
+	/*border-color: aqua;*/
+	width: 80vw; 
 	height: 90vh;
 	flex-direction: column;
+	justify-self: center;
+	justify-content: space-between; align-items: center;
 }
 
-#topbar {
+h1 {
+	font-size: 1.8rem;
+}
+
+span {
+	font-size: inherit;
+}
+
+.spoiler {
+	background-color: var(--background-color2); color: transparent;
+	margin: 0 15px;
+	border-radius: 3px;
+	transition: color 0.35s ease, background-color 0.35s ease;
+}
+
+.spoiler:hover {
+	background-color: transparent; color: var(--theme-color);
+}
+
+#buttons {
 	justify-content: space-between;
+	width: 90%;
 }
 
-#function-buttons {
-	justify-content: space-between;
-	width: 30%; max-width: 30rem;
-	column-gap: 2rem;
-}
-
-#function-buttons > button {
-	background-color: rgb(58, 196, 166);
-	width: 50%;
+#buttons > button {
+	width: 40%; height: 3rem;
 	align-items: center; justify-content: center;
 	cursor: pointer;
+	background: var(--theme-color);
+	border-radius: 5px;
 }
 
-#projectile-stats {
-	background-color: purple;
-	width: 10%; min-width: 14rem;
-	flex-direction: column; row-gap: 0.2rem;
-}
-
-#canvaszone {
-	background-color: white;
+#canvas-zone {
 	width: 85%; 
 	height: 65%;
-	justify-self: center;
 	align-self: center;
-	margin-top: 5rem;
+
+	border: white, 2px dashed;
+	background-color: var(--background-color2);
+	border-radius: 10px;
 }
 
 #canvas {
 	width: 100%; height: 100%;
 }
-	
-div #sliderInputSpeed {
-	font-size: 20px;
-	margin-bottom: 1em;
 
-}
-	
-#sliderInputSpeed {
-	-webkit-appearance: none; 
-	width: 300px;
-	background: linear-gradient(to right, rgba(128, 178, 252, 0.997), rgb(8, 103, 237));
-	margin: 5px;
-	border-radius: 30px;
-	height: 35px;
-	margin-top: 18px;
+#simulation-control {
+	justify-content: space-between;
+	width: 90%;
 }
 
-#sliderInputSpeed::-webkit-slider-thumb {
-	-webkit-appearance: none;
-	height: 25px;
-	width: 25px;
-	border-radius: 35px;
-	background: #01364b0f;
-	border: 4px double black;
+#inputs {
+	flex-direction: column;
+	justify-content: space-around;
 
 }
 
-#SpeednumInput {
-	margin: 7px;
-	margin-top: 13px;
-	padding: 0;
-	color: white;
-	font-size: 23px;
-	background-color: #222424;
-	border: 1px solid whitesmoke;
-	text-align: center;	
+#inputs div input {
+	margin: 0 10px;
 }
 
-label{
-	font-size: 30px;
-	margin: 7px;
-	margin-top: 13px;
+#inputs div p {
+	color: var(--text-color2);
 }
 
-#sliderInputElevation {
-	-webkit-appearance: none; 
-	width: 300px;
-	background: linear-gradient(to right, rgba(116, 184, 112, 0.997), rgb(9, 184, 15));
-	margin: 5px;
-	border-radius: 30px;
-	height: 35px;
-	margin-top: 10px;
+#stats {
+	flex-direction: column; row-gap: 0.2rem;
+	align-items: flex-end;
 }
 
-#sliderInputElevation::-webkit-slider-thumb {
-	-webkit-appearance: none;
-	height: 25px;
-	width: 25px;
-	border-radius: 35px;
-	background: #01364b0f;
-	border: 4px double black;
-
-}
-
-#ElevationnumInput {
-	margin: 7px;
-	margin-top: 10px;
-	padding: 0;
-	color: white;
-	font-size: 23px;
-	background-color: #222424;
-	border: 1px solid whitesmoke;
-	text-align: center;	
+label {
+	font-size: 1.2rem;
 }
