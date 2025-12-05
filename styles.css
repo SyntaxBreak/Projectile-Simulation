@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Share+Tech&display=swap');
 :root {
-	--background-color: rgb(23,23,23);
-	--background-color2: rgb(41,41,41);
-	--theme-color: rgb(54,173,114);
+	--background-color: rgb(23, 23, 23);
+	--background-color2: rgb(41, 41, 41);
+	--theme-color: rgb(54, 173, 114);
+	--warning-color: rgb(136, 29, 29);
 	--text-color: rgb(225, 225, 225);
 	--text-color2: rgb(121, 121, 121);
 }
@@ -59,31 +60,29 @@ span {
 }
 
 #buttons {
-	justify-content: space-between;
+	justify-content: space-around;
 	width: 90%;
 }
 
-#buttons > button {
-	width: 40%; height: 3rem;
+button {
+	border: none;
+	width: 30%; height: 3rem;
 	align-items: center; justify-content: center;
 	cursor: pointer;
+	border-radius: 5px;
+	transition: filter 0.2s ease;
+}
+
+button:hover {
+	filter: brightness(0.7);
+}
+#start-button {
 	background: var(--theme-color);
-	border-radius: 5px;
 }
 
-#canvas-zone {
-	font-size: 25px;
-	border-radius: 5px;
+#reset-button {
+	background: var(--warning-color);
 }
-
-#projectile-stats {
-	background-color: purple;
-	width: 20%; min-width: 14rem;
-	flex-direction: column; row-gap: 0.2rem;
-	font-size: 25px;
-	border-radius: 7px;	
-}
-
 #canvas-zone {
 	background-color: white;
 	width: 85%; 
