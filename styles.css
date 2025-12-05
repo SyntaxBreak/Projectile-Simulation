@@ -84,7 +84,7 @@ span {
 	border-radius: 7px;	
 }
 
-#canvaszone {
+#canvas-zone {
 	background-color: white;
 	width: 85%; 
 	height: 65%;
@@ -112,6 +112,7 @@ span {
 
 #inputs div input {
 	margin: 0 10px;
+	accent-color: var(--theme-color);
 }
 
 #inputs div p {
